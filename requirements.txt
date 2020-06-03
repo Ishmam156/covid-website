@@ -1,6 +1,6 @@
 DateTime==4.3
 Flask==1.1.1
-gunicorn==19.3.0
+gunicorn==19.5.0
 itsdangerous==1.1.0
 MarkupSafe==1.1.1
 requests==2.22.0
