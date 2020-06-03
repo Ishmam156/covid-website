@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>COVID-19 Stats | Home</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,900,700,400italic" rel="stylesheet">
+    
+    
+  </head>
+  <body>
+
+  <div class="bg-accent-2 text-white navbar-dark">
+    <div class="container">
+      <nav class="navbar px-0 navbar-expand-lg navbar-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a href="/" class="pl-md-0 p-3 text-white">Home</a>
+            <a href="/global/" class="p-3 text-decoration-none text-white">Global</a>
+            <a href="/country/" class="p-3 text-decoration-none text-white">Country</a>
+            <a href="/comp/" class="p-3 text-decoration-none text-white">Comparison</a>
+          </div>
+        </div>
+      </nav>
+
+    </div>
+  </div>
+
+
+  
+
+<div class="jumbotron bg-accent-2 text-white mb-0">
+  <div class="container">
+
+      <h1 class="display-4 text-white">COVID - 19 Countrywise Statistics</h1>
+      <div class="lead mb-3">Welcome to the website to get global as well as country level updated data of COVID - 19.</div>
+      <div class="mt-4">
+        <a href="/global/"
+           class="btn btn-outline-light btn-hover-text-accent-2 btn-lg my-3 mx-1 text-left">
+          <span>Global Statistics</span>
+        </a>
+        <a href="/comp/"
+           class="btn btn-outline-light btn-hover-text-accent-2 btn-lg my-3 mx-1 text-left">
+          <span>Country Comparison</span>
+        </a>
+        <a href="/country/"
+           class="btn btn-accent-1 btn-lg my-3 mx-1 text-left">
+          <span>Country Statistics</span>
+        </a>
+      </div>
+
+    </div>
+</div>
+
+
+<div class="container py-5">
+  <h2>Gratitude</h2>
+<br>
+  <p>The website is based on the great bootstrap theme named "Charming" which can be found <a href="https://github.com/HackerThemes/theme-machine">here.</a></p>
+
+  
+<p>The updated data of country wide COVID - 19 statistics is taken from a public API which is available at this 
+  <a href="https://www.covid19api.com/">link</a> for use as well as to read the documentation.
+</p>
+
+</div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  </body>
+</html>

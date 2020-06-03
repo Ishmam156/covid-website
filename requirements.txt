@@ -1,0 +1,8 @@
+DateTime==4.3
+Flask==1.1.1
+gunicorn==19.3.0
+itsdangerous==1.1.0
+MarkupSafe==1.1.1
+requests==2.22.0
+rope==0.14.0
+Werkzeug==0.16.0
