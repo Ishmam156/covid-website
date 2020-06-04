@@ -7,12 +7,15 @@ app = Flask(__name__)
 # API URL
 url = "https://api.covid19api.com/summary"
 
-# Get response in terms of JSON of COVID-19 summary and saves Global
-response = requests.get(
-    url,
-    headers={
-        "Accept": "application/json"}
-).json()
+# Get response in terms of JSON of COVID-19 summary and saves Global while looping since API runs out at times
+while True:
+    try:
+        response = requests.get(url,headers={"Accept": "application/json"}).json()
+        break
+    except:
+        pass
+
+# Stores response as a dictionary for later use
 response = dict(response)
 
 # Get current date and format it
@@ -54,8 +57,11 @@ def compinfo():
 
 	return render_template('countrycomp.html', country_filter1=country_filter1, country_filter2=country_filter2, time=time, response=response)	
 
+@app.route('/about/')
+def about():
+	return render_template('about.html')
 
 if __name__ == '__main__':
-	app.run(debug=True)
+	app.run()
 
 
