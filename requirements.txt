@@ -5,4 +5,4 @@ itsdangerous==1.1.0
 MarkupSafe==1.1.1
 requests==2.22.0
 rope==0.14.0
-Werkzeug==0.16.0
+Werkzeug==2.2.3
